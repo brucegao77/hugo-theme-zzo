@@ -1,0 +1,13 @@
+{{ define "main" }}
+<header class="header basicflex-column">
+  <h3 class="h3 terms__title">
+    {{ .Title }}
+  </h3>
+</header>
+<main class="main">
+  {{ partial "comments/comments.html" . }}
+</main>
+<div class="hide">
+  {{ partial "search/site-search" . }}
+</div>
+{{ end }}
